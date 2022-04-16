@@ -29,7 +29,7 @@ Shengqu Cai, Anton Obukhov, Dengxin Dai, Luc Van Gool\
 [[pdf](https://arxiv.org/abs/2202.13162)]
 [[code](https://github.com/primecai/Pix2NeRF)]
 
-<div class='row vspace-top'>
+<!-- <div class='row vspace-top'>
   <div class="col-sm-3">
     <img src='../images/500x300.png' class='img-fluid'>
   </div>
@@ -47,7 +47,7 @@ Shengqu Cai, Anton Obukhov, Dengxin Dai, Luc Van Gool\
       <a href="https://arxiv.org/pdf/2004.03805.pdf">[Paper]</a>
     </div>
   </div>
-</div>
+</div> -->
 
 
 ## <a name="misc"></a> Misc
