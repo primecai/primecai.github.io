@@ -24,7 +24,7 @@ I am a Computer Science master student at ETH Zürich supervised by Prof. Luc Va
 [[Google Scholar Profile](https://scholar.google.com/citations?user=KeI51t8AAAAJ&hl=en)]
 
 Pix2NeRF: Unsupervised Conditional π-GAN for Single Image to Neural Radiance Fields Translation\
-**Shengqu Cai**, [Anton Obukhov](https://www.obukhov.ai/), Dengxin Dai, Luc Van Gool\
+**Shengqu Cai**, [Anton Obukhov](https://www.obukhov.ai/), [Dengxin Dai](https://vas.mpi-inf.mpg.de/dengxin/), [Luc Van Gool](https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html)\
 *Conference on Computer Vision and Pattern Recognition* (**CVPR**), 2022\
 [[pdf](https://arxiv.org/abs/2202.13162)]
 [[code](https://github.com/primecai/Pix2NeRF)]
