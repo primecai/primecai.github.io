@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ## <a name="bio"></a> Bio
-I am a Computer Science master student at ETH Zürich supervised by Prof. Luc Van Gool, currently visiting Stanford University at Computational Imaging Lab led by Prof. Gordon Wetzstein. I am interested in using artificial intelligence to solve tasks that are fundamentally ill-posed via traditional methods, slay the unslayable. I have been working primarily around neural rendering and 3D vision, including but not limited to generative models, unsupervised learning, GAN inversion, scene representations, visual content creation, etc.
+I am a Computer Science master student at ETH Zürich supervised by [Prof. Luc Van Gool](https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html), currently visiting Stanford University at Computational Imaging Lab led by [Prof. Gordon Wetzstein](https://stanford.edu/~gordonwz/). I am interested in using artificial intelligence to solve tasks that are fundamentally ill-posed via traditional methods, slay the unslayable. I have been working primarily around neural rendering and 3D vision, including but not limited to generative models, unsupervised learning, GAN inversion, scene representations, visual content creation, etc.
 
 
 ## <a name="edu"></a> Education
