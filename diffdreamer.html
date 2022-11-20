@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="3D Moments from Near-Duplicate Photos">
-  <meta name="keywords" content="3D Moments, view synthesis">
+        content="DiffDreamer: Consistent Single-shot Perpetual View Generation with Conditional Diffusion Models">
+  <meta name="keywords" content="DiffDreamer, view synthesis, diffusion model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3D Moments from Near-Duplicate Photos</title>
+  <title>DiffDreamer: Consistent Single-shot Perpetual View Generation with Conditional Diffusion Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -46,39 +46,43 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">3D Moments from Near-Duplicate Photos</h1>
+          <h1 class="title is-1 publication-title"> DiffDreamer: Consistent Single-shot Perpetual View Generation with Conditional Diffusion Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a><sup>1,2</sup>, </span>
+              <a href="https://primecai.github.io/">Shengqu Cai</a><sup>1</sup>, </span>
             <span class="author-block">
-              <a href="https://www.cs.cornell.edu/~zl548/">Zhengqi Li</a><sup>1</sup>, </span>
+              <a href="https://ericryanchan.github.io/">Eric Ryan Chan</a><sup>4</sup>, </span>
             <span class="author-block">
-              <a href="http://salesin.cs.washington.edu/">David Salesin</a><sup>1</sup>,
+              <a href="https://pengsongyou.github.io/">Songyou Peng</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a><sup>1,2</sup>,
+              <a href="https://people.ee.ethz.ch/~mshahbazi/">Mohamad Shahbazi</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a><sup>1,3</sup>,
+              <a href="https://www.obukhov.ai/">Anton Obukhov</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a><sup>1</sup>
+              <a href="https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html">Luc Van Gool</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a><sup>4</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Google Research &nbsp; </span>
-            <span class="author-block"><sup>2</sup>Cornell Tech, Cornell University &nbsp; </span>
-            <span class="author-block"><sup>3</sup>University of Washington</span>
+            <span class="author-block"><sup>1</sup>ETH Zurich &nbsp; </span>
+            <span class="author-block"><sup>2</sup>MPI for Intelligent Systems, Tübingen &nbsp; </span>
+            <span class="author-block"><sup>3</sup>KU Leuven</span>
+            <span class="author-block"><sup>3</sup>Stanford University</span>
 
           </div>
 
-          <h1 style="font-size:24px;font-weight:bold">CVPR 2022</h1>
+          <!-- <h1 style="font-size:24px;font-weight:bold">Under Review</h1> -->
           
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="static/pdfs/3d_moments.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -86,8 +90,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
-              <span class="link-block">
+              </span> -->
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2205.06255"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -95,9 +99,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="#overview_video"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -105,9 +109,9 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Supp Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="static/pdfs/supp.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -115,15 +119,15 @@
                   </span>
                   <span>Supp</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google-research/3d-moments"
+                <a href="https://primecai.github.io/diffdreamer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code(coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -146,7 +150,7 @@
 </section>
 
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline controls width="100%">
@@ -157,7 +161,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="hero is-light is-small">
@@ -165,33 +169,39 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/zoom-in_3988-0-1.mp4"
+          <video poster="" id="fullbody" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/1.mp4"
                     type="video/mp4">
           </video>
         </div>
 
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/zoom-in_000357-0-1.mp4"
+          <video poster="" id="shiba" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/2.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-toby">
-          <video poster="" id="toby" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/zoom-in_000301-0-1.mp4"
+          <video poster="" id="toby" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/3.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-            <source src="static/videos/000654_up-down-0-1.mp4"
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/4.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay playsinline controls muted loop width="100%">
-            <source src="static/videos/000204_side-0-1.mp4"
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay playsinline controls muted loop width="128px">
+            <source src="static/videos/50_steps/6.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -209,7 +219,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We introduce 3D Moments, a new computational photography effect. As input we take a pair of near-duplicate photos, i.e., photos of moving subjects from similar viewpoints, common in people's photo collections. As output, we produce a video that smoothly interpolates the scene motion from the first photo to the second, while also producing camera motion with parallax that gives a heightened sense of 3D. To achieve this effect, we represent the scene as a pair of feature-based layered depth images augmented with scene flow. This representation enables motion interpolation along with independent control of the camera viewpoint. Our system produces photo-realistic space-time videos with motion parallax and scene dynamics, while plausibly recovering regions occluded in the original views. We conduct extensive experiments demonstrating superior performance over baselines on public datasets and in-the-wild photos.
+            Perpetual view generation—the task of generating long-
+            range novel views by flying into a given image—has been
+            a novel yet promising task. We introduce DiffDreamer, an
+            unsupervised framework capable of synthesizing novel views
+            depicting a long camera trajectory while training solely on
+            internet-collected images of nature scenes. We demonstrate
+            that image-conditioned diffusion models can effectively per-
+            form long-range scene extrapolation while preserving both
+            local and global consistency significantly better than prior
+            GAN-based methods.
           </p>
         </div>
       </div>
@@ -237,7 +256,7 @@
  <br>
   <br>
 
-<section>
+<!-- <section>
   <div class="columns is-centered has-text-centered">
     <h2 class="title is-3"> More Results</h2>
 </div>
@@ -321,7 +340,7 @@ Zooming-In camera motion
 Our method cannot handle motions that are too large/challenging, and doesn't work well with incorrectly estimated monocular depths.
 
 </div>
-</section>
+</section> -->
 
 
 
