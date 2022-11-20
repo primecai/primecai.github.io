@@ -163,6 +163,12 @@
     </div>
   </div>
 </section> -->
+<div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
+  <img style='height: auto; width: 99%; object-fit: contain' src="static/images/teaser.png" alt="overview_image">
+  DiffDreamer (Top) is a novel diffusion-based approach for perpetual nature view generation. It exhibits high spatio-temporal
+  consistency, a desired property missing in prior art, such as InfiniteNature-Zero [38] (Bottom). We check for consistency by extracting
+  keypoints from both sequences with COLMAP, resulting in point clouds of vastly different sizes and sparsity (Right).
+  </div> 
 
 
 <section class="hero is-light is-small">
@@ -236,9 +242,13 @@
     </div>
     <!--/ Abstract. -->
 
-<!-- <div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
-<img style='height: auto; width: 75%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
-</div>  -->
+<div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
+<img style='height: auto; width: 99%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
+Overview of our pipeline. We train an image-conditional diffusion model to perform image-to-image refinement and inpainting
+given a corrupted image and its missing region mask. At inference, we perform stochastic conditioning on three conditionings: naive forward
+warping from the previous frame (black arrow), anchored conditioning by warping a further frame (blur arrow), and lookahead conditioning
+by warping a virtual future frame (red arrow). We repeat this render-refine-repeat pipeline to get sequences extrapolating a given image.
+</div> 
 
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
