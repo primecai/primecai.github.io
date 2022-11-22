@@ -130,7 +130,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code(coming soon)</span>
+                  <span>Code (coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -236,33 +236,36 @@
             unsupervised framework capable of synthesizing novel views
             depicting a long camera trajectory while training solely on
             internet-collected images of nature scenes. We demonstrate
-            that image-conditioned diffusion models can effectively per-
-            form long-range scene extrapolation while preserving both
+            that image-conditioned diffusion models can effectively perform
+            long-range scene extrapolation while preserving both
             local and global consistency significantly better than prior
             GAN-based methods.
           </p>
         </div>
       </div>
     </div>
+  </div>
+</section>
     <!--/ Abstract. -->
 
-<br>
-<br>
-
-<!-- <center><h2 class="title is-3">Overview</h2></center> -->
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div align="center" style="margin-top:0px;" style="margin-bottom:20px;">
-        <h2 class="title is-4">Overview</h2>
-        <img style='height: auto; width: 99%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
-        </div> 
-      <!-- <h2 class="subtitle has-text-centered"> -->
-        Overview of our pipeline. We train an image-conditional diffusion model to perform image-to-image refinement and inpainting
-        given a corrupted image and its missing region mask. At inference, we perform stochastic conditioning on three conditionings: naive forward
-        warping from the previous frame (black arrow), anchored conditioning by warping a further frame (blur arrow), and lookahead conditioning
-        by warping a virtual future frame (red arrow). We repeat this render-refine-repeat pipeline to get sequences extrapolating a given image.
-      <!-- </h2> -->
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Method</h2>
+        <div align="center" style="margin-top:0px;" style="margin-bottom:20px;">
+          <img style='height: auto; width: 99%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
+          </div> 
+        <div class="content has-text-justified">
+          <p>
+            Overview of our pipeline. We train an image-conditional diffusion model to perform image-to-image refinement and inpainting
+            given a corrupted image and its missing region mask. At inference, we perform stochastic conditioning on three conditionings: naive forward
+            warping from the previous frame (black arrow), anchored conditioning by warping a further frame (blur arrow), and lookahead conditioning
+            by warping a virtual future frame (red arrow). We repeat this render-refine-repeat pipeline to get sequences extrapolating a given image.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -276,28 +279,43 @@ warping from the previous frame (black arrow), anchored conditioning by warping 
 by warping a virtual future frame (red arrow). We repeat this render-refine-repeat pipeline to get sequences extrapolating a given image.
 </div>  -->
 
-<br>
-<br>
-
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <center>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-4">Perpetual View Synthesis</h2>
-      <video id="teaser" autoplay muted loop playsinline controls height="128px">
-        <source src="static/videos/100_steps/stack.mp4" type="video/mp4">
-      </video>
-      </center>
-      By conditioning on randomly selected patterns, DiffDreamer is able to synthesize long camera trajectories.
+        <video id="teaser" autoplay muted loop playsinline controls height="128px">
+          <source src="static/videos/50_steps/stack2.mp4" type="video/mp4">
+        </video>
+        <div class="content has-text-justified">
+        <center>
+          <p>
+            Consistent long camera trajectory synthesis.
+          </p>
+        </center>
+        </div>
+        <video id="teaser" autoplay muted loop playsinline controls height="128px">
+          <source src="static/videos/100_steps/stack.mp4" type="video/mp4">
+        </video>
+        <div class="content has-text-justified">
+          <center>
+          <p>
+            Longer outputs by conditioning on randomly selected patterns, DiffDreamer is able to synthesize long camera trajectories.
+          </p>
+        </center>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
-@inproceedings{cai2022diffdreamer,
+    <pre><code>@inproceedings{cai2022diffdreamer,
   title     = {DiffDreamer: Consistent Single-view Perpetual View Generation with Conditional Diffusion Models},
   author    = {Cai, Shengqu and Chan, Eric Ryan and Peng, Songyou and Shahbazi, Mohamad and Obukhov, Anton 
                and Van Gool, Luc and Wetzstein, Gordon},
