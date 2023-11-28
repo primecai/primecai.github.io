@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width"> -->
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         </div>
         <br>
 
-        <div id="content" style="max-width:3000px;margin:auto; margin-bottom: 1em" >
+        <div id="content" style="max-width:1200px;margin:auto; margin-bottom: 1em" >
             <center>
             <section class="slider-wrapper">
             <button class="slide-arrow slide-arrow-prev">
@@ -71,13 +72,13 @@
             <br>
             <div id='abstract'> 
                 <center><h2>Abstract</h2></center>
-                <center><p style="max-width:3000px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Traditional 3D content creation tools empower users to bring their imagination to life by giving them direct control over a scene's geometry, appearance, motion, and camera path. Creating computer-generated videos, however, is a tedious manual process, which can be automated by emerging text-to-video diffusion models. Despite great promise, video diffusion models are difficult to control, hindering a user to apply their own creativity rather than amplifying it. To address this challenge, we present a novel approach that combines the controllability of dynamic 3D meshes with the expressivity and editability of emerging diffusion models. For this purpose, our approach takes an animated, low-fidelity rendered mesh as input and injects the ground truth correspondence information obtained from the dynamic mesh into various stages of a pre-trained text-to-image generation model to output high-quality and temporally consistent frames. We demonstrate our approach on various examples where motion can be obtained by animating rigged assets or changing the camera path.</p></center>
+                <center><p style="max-width:1200px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Traditional 3D content creation tools empower users to bring their imagination to life by giving them direct control over a scene's geometry, appearance, motion, and camera path. Creating computer-generated videos, however, is a tedious manual process, which can be automated by emerging text-to-video diffusion models. Despite great promise, video diffusion models are difficult to control, hindering a user to apply their own creativity rather than amplifying it. To address this challenge, we present a novel approach that combines the controllability of dynamic 3D meshes with the expressivity and editability of emerging diffusion models. For this purpose, our approach takes an animated, low-fidelity rendered mesh as input and injects the ground truth correspondence information obtained from the dynamic mesh into various stages of a pre-trained text-to-image generation model to output high-quality and temporally consistent frames. We demonstrate our approach on various examples where motion can be obtained by animating rigged assets or changing the camera path.</p></center>
             </div>
             <br>
             <div id='method'> 
                 <h2>Method Overview</h2>
                 <p style="max-width:1200px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Our system takes as input a set of UV and depths maps rendered from an animated 3D scene. We use a depth-conditioned ControlNet to generate corresponding frames while using the UV correspondences to preserve the consistency. We initialize the noise in the UV space of each object which we then render into each image. For each diffusion step, we first use extended attention for a set of keyframes and extract their pre- and post-attention features. The post-attention features are projected to the UV space and unified. Finally, all frames are generated using a weighted combination of the outputs of the extended attention with the pre-attention features of the keyframe, and the UV-composed post-attention features from the keyframes.</p>
-                <img src="assets/imgs/pipeline.png" width="100%">
+                <img src="assets/imgs/pipeline.png" width=1200px>
             </div>
             <br>
             <div id="results">
@@ -217,21 +218,6 @@
                 <h2>Rotations</h2>
                 <div id='rotations'>    
                     <table style="width: 100%;margin-left:auto;margin-right:auto;">
-                        <!-- <tr>
-                            <video autoplay muted loop width="100%">
-                                <source src="assets/rotation/sneaker_combined_captioned.mp4">
-                            </video>
-                        </tr>
-                        <tr>
-                            <video autoplay muted loop width="100%">
-                                <source src="assets/rotation/house_combined_captioned.mp4">
-                            </video>
-                        </tr>
-                        <tr>
-                            <video autoplay muted loop width="100%">
-                                <source src="assets/rotation/bed_combined_captioned.mp4">
-                            </video>
-                        </tr> -->
                         <video autoplay muted loop width="100%">
                             <source src="assets/rotation/combined_captioned.mp4">
                         </video>
@@ -262,31 +248,6 @@
                         </tr>
                       </table>
                 </div>
-
-                <!-- <h2>Effectiveness of UV Noise Initialization</h2>
-                <div id='uv_noise'>    
-                    <center><span style="color: #009c3b;">a train running in a field</span></center>
-                    <table style="width: 33%;margin-left:auto;margin-right:auto;">
-                        <video autoplay muted loop width=600pt>
-                            <source src="assets/uv_noise/uv_noise_combined.mp4">
-                        </video>
-                      </table>
-                </div>
-                <center><p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">
-                    We find that the performance of many components in our pipeline, e.g. inflated attention, are tightly related to the initial noise. Video editing works typically require accurate DDIM inversion as noise initialization. Using DDIM inverted noise encourages temporal coherence and similarities to the input video. However, since our input is textureless UV maps and depths, DDIM inversion constantly fails and will not provide useful information. We instead propose to utilize the canonical UV space to initialize the noise in each frame of the sequence. </p></center> -->
-
-                <!-- <h2>Effectiveness of Latent Normalization</h2>
-                <div id='latent_normalization'>    
-                    <center><span style="color: #009c3b;">a Disney animated fox running</span></center>
-                    <table style="width: 33%;margin-left:auto;margin-right:auto;">
-                        <video autoplay muted loop width=600pt>
-                            <source src="assets/latent_normalization/latent_normailization_combined.mp4">
-                        </video>
-                      </table>
-                </div>
-                <center><p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">
-                    Our latent normalization can address a large portion of the color flickering issue, where the overall color distribution shifts randomly for different frames. We notice that small color shifts in the latent space will be inflated by the VAE decoder used in Stable Diffusion, causing the generation process very sensitive to small differences in the latent space. </p></center> -->
-
                 <br>
                 <h2>More Results Comparing with Gen1</h2>
                 <section class="slider-wrapper">
@@ -332,35 +293,34 @@
                     </li>
                 </ul>
                 </section>
-            <br>
-            <p class="section">&nbsp;</p>
-            <!--p class="section" id="bibtex"--><h2>Bibtex</h2><!--/p-->
-            <table border="0">
-                <tbody>
-                    <pre style=" display: block;
-                        background: #eee;
-                        white-space: pre;
-                        -webkit-overflow-scrolling: touch;
-                        max-width: 100%;
-                        min-width: 100px;
-                        border-radius: 20px;
-                        text-align: left
-                        ">
+                <br>
 
-                    @inproceedings{cai2023genren,
-                        author    = {Cai, Shengqu and Ceylan, Duygu and Gadelha, Matheus and Huang, Chun-Hao and Wang, Tuanfeng and Wetzstein, Gordon.},
-                        title    = {Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models},
-                        booktitle    = {arXiV},
-                        year    = {2023}
-                    }       
-                    </pre>
-                </tbody>
-            </table>
+                <p class="section">&nbsp;</p>
+                <h2>Bibtex</h2>
+                <table style="width: 100%;margin-left:auto;margin-right:auto;">
+                    <tbody>
+                        <pre style=" display: block;
+                            background: #eee;
+                            white-space: pre;
+                            -webkit-overflow-scrolling: touch;
+                            max-width: 100%;
+                            /* min-width: 100px; */
+                            border-radius: 20px;
+                            text-align: left
+                            ">
+
+                        @inproceedings{cai2023genren,
+                            author    = {Cai, Shengqu and Ceylan, Duygu and Gadelha, Matheus
+                                              and Huang, Chun-Hao and Wang, Tuanfeng and Wetzstein, Gordon.},
+                            title        = {Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models},
+                            booktitle = {arXiV},
+                            year       = {2023}
+                        }       
+                        </pre>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
     <script type="text/javascript" src="script.js"></script>
-    <!-- <script type="text/javascript" src="cocoen.js"></script> -->
-    <!-- <script>
-        Cocoen.parse(document.body);
-    </script> -->
+    </div>
 </body>
