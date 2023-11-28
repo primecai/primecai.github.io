@@ -77,7 +77,7 @@
             <div id='method'> 
                 <h2>Method Overview</h2>
                 <p style="max-width:1200px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Our system takes as input a set of UV and depths maps rendered from an animated 3D scene. We use a depth-conditioned ControlNet to generate corresponding frames while using the UV correspondences to preserve the consistency. We initialize the noise in the UV space of each object which we then render into each image. For each diffusion step, we first use extended attention for a set of keyframes and extract their pre- and post-attention features. The post-attention features are projected to the UV space and unified. Finally, all frames are generated using a weighted combination of the outputs of the extended attention with the pre-attention features of the keyframe, and the UV-composed post-attention features from the keyframes.</p>
-                <img src="assets/imgs/pipeline.png" width=1200px>
+                <img src="assets/imgs/pipeline.png" width=100%>
             </div>
             <br>
             <div id="results">
