@@ -26,7 +26,7 @@
         </div>
         <br>
 
-        <div id="content" style="max-width:1200px;margin:auto; margin-bottom: 1em" >
+        <div id="content" style="max-width:3000px;margin:auto; margin-bottom: 1em" >
             <center>
             <section class="slider-wrapper">
             <button class="slide-arrow slide-arrow-prev">
@@ -71,13 +71,13 @@
             <br>
             <div id='abstract'> 
                 <center><h2>Abstract</h2></center>
-                <center><p style="max-width:1200px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Traditional 3D content creation tools empower users to bring their imagination to life by giving them direct control over a scene's geometry, appearance, motion, and camera path. Creating computer-generated videos, however, is a tedious manual process, which can be automated by emerging text-to-video diffusion models. Despite great promise, video diffusion models are difficult to control, hindering a user to apply their own creativity rather than amplifying it. To address this challenge, we present a novel approach that combines the controllability of dynamic 3D meshes with the expressivity and editability of emerging diffusion models. For this purpose, our approach takes an animated, low-fidelity rendered mesh as input and injects the ground truth correspondence information obtained from the dynamic mesh into various stages of a pre-trained text-to-image generation model to output high-quality and temporally consistent frames. We demonstrate our approach on various examples where motion can be obtained by animating rigged assets or changing the camera path.</p></center>
+                <center><p style="max-width:3000px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Traditional 3D content creation tools empower users to bring their imagination to life by giving them direct control over a scene's geometry, appearance, motion, and camera path. Creating computer-generated videos, however, is a tedious manual process, which can be automated by emerging text-to-video diffusion models. Despite great promise, video diffusion models are difficult to control, hindering a user to apply their own creativity rather than amplifying it. To address this challenge, we present a novel approach that combines the controllability of dynamic 3D meshes with the expressivity and editability of emerging diffusion models. For this purpose, our approach takes an animated, low-fidelity rendered mesh as input and injects the ground truth correspondence information obtained from the dynamic mesh into various stages of a pre-trained text-to-image generation model to output high-quality and temporally consistent frames. We demonstrate our approach on various examples where motion can be obtained by animating rigged assets or changing the camera path.</p></center>
             </div>
             <br>
             <div id='method'> 
                 <h2>Method Overview</h2>
                 <p style="max-width:1200px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">Our system takes as input a set of UV and depths maps rendered from an animated 3D scene. We use a depth-conditioned ControlNet to generate corresponding frames while using the UV correspondences to preserve the consistency. We initialize the noise in the UV space of each object which we then render into each image. For each diffusion step, we first use extended attention for a set of keyframes and extract their pre- and post-attention features. The post-attention features are projected to the UV space and unified. Finally, all frames are generated using a weighted combination of the outputs of the extended attention with the pre-attention features of the keyframe, and the UV-composed post-attention features from the keyframes.</p>
-                <img src="assets/imgs/pipeline.png" width=1200px>
+                <img src="assets/imgs/pipeline.png" width="100%">
             </div>
             <br>
             <div id="results">
