@@ -82,7 +82,7 @@ for (var i = 0; i < sliders.length; i++) set_slider(sliders[i])
 // Read JSON
 make_site({
     "title": "Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models",
-    "conference": "Under Submission",
+    "conference": "",
     "authors": [
         {
             "name": "Shengqu Cai",
