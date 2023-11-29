@@ -88,7 +88,7 @@ make_site({
             "name": "Shengqu Cai",
             "email": "https://primecai.github.io/",
             "affiliations": ["1", "2"],
-            "footnote": ["*"]
+            "footnote": [""]
         },
         {
             "name": "Duygu Ceylan",
@@ -122,7 +122,7 @@ make_site({
         }
     ],
     "affiliations": ["Stanford University", "Adobe Research"],
-    "footnote": ["joint first authors"],
+    "footnote": ["equal contribution"],
     "URLs": {
         "paper": "https://arxiv.org/",
         "arxiv": "https://arxiv.org/",
